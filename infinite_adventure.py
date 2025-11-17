@@ -11,14 +11,14 @@ from notopenai import NotOpenAI
 import os
 from pgl import GWindow, GImage, GRect
 
-# follow the instructions in the notopenai handout to get your free api key
+# your instructor should have sent you an api key
 CLIENT = NotOpenAI(api_key="your_api_key_here")
-STORY_NAME = "original_big"
-WINDOW_SIZE = 1024
+STORY_NAME = "starter"
+WINDOW_SIZE = 600
 
 
 def main():
-    print("Infinite Story")
+    print("Infinite Adventure")
     # TODO: your code here
 
 

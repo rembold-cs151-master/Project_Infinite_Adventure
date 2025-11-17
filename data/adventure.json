@@ -1,0 +1,793 @@
+{
+  "plot": "You are exploring a mysterious, largely underground world with a touch of magic. Most of the tone is simply setting a beautiful and mysterious scene filled with intrigue. Occasionally magical things might happen, but things are otherwise grounded in reality.",
+  "scenes": {
+    "start": {
+      "text": "The air here is damp and cool as you stand at the foot of a worn road, which stretches before a small, sturdy brick building. From the base of the structure, a clear, gurgling stream flows out and quickly descends down a brush-choked gully to the south. The road continues its ascent, climbing a gentle small hill to the west, where the day’s light is beginning to deepen.",
+      "scene_summary": "Standing outside the brick building",
+      "choices": [
+        {
+          "text": "Follow the road up the hill to the west",
+          "scene_key": "EndOfRoad"
+        },
+        {
+          "text": "Enter the building",
+          "scene_key": "InsideBuilding"
+        },
+        {
+          "text": "Proceed south into the valley",
+          "scene_key": "Valley"
+        }
+      ]
+    },
+    "EndOfRoad": {
+      "text": "You have reached the end of the road, standing exposed at the top of a small hill. The vista spreads out dramatically below you, revealing the same small brick building nestled peacefully in the valley to the east. The day is drawing to a close, and the sun is beginning to set, bleeding a magnificent warm golden glow across the entire, silent landscape.",
+      "scene_summary": "At the end of the road atop a hill",
+      "choices": [
+        {
+          "text": "Return back down the road to the building",
+          "scene_key": "start"
+        },
+        {
+          "text": "Sit and watch the sunset from atop the hill",
+          "scene_key": "WatchingSunset"
+        }
+      ]
+    },
+    "InsideBuilding": {
+      "text": "You are standing within a quiet, stone-floored well house, the source of a large spring thrumming softly beneath the floor. A draft whistles through the open exit door to the south, which leads back to the world outside. The room holds a sense of contained mystery, particularly where an interior room to the north is hidden behind a remarkable sight: a shimmering curtain of pure light that blocks the doorway like a liquid shield.",
+      "scene_summary": "Inside of the well house",
+      "choices": [
+        {
+          "text": "Leave the building",
+          "scene_key": "start"
+        },
+        {
+          "text": "Investigate the shimmering curtain barrier",
+          "scene_key": "ShimmeringCurtain"
+        }
+      ]
+    },
+    "Valley": {
+      "text": "The air here is thick with the scent of pine and damp earth as you walk through the valley in the dense forest. A lively stream rushes past your feet, its water a blur of motion as it tumbles along a rough, rocky bed. The stream’s course is inexorable, continuously flowing away to the south, pulling your gaze deeper into the shadowed woods.",
+      "scene_summary": "In the valley beside the stream",
+      "choices": [
+        {
+          "text": "Head upstream towards the brick building",
+          "scene_key": "start"
+        },
+        {
+          "text": "Follow the stream to the south",
+          "scene_key": "SlitInRock"
+        }
+      ]
+    },
+    "SlitInRock": {
+      "text": "You stop abruptly as the entire stream disappears without a trace right at your feet, the rushing water splashing into a two-inch slit that cleaves the solid rock surface. The torrent is swallowed instantly by this tiny fracture, and just to the south, the formerly roaring streambed is now nothing but cold, bare rock, smoothed by eons of water that is no longer there.",
+      "scene_summary": "The stream vanishes into a slit in the rock",
+      "choices": [
+        {
+          "text": "Head upstream back into the valley",
+          "scene_key": "Valley"
+        },
+        {
+          "text": "Follow the dry streambed south",
+          "scene_key": "OutsideGrate"
+        },
+        {
+          "text": "Plunge your hand into the slit",
+          "scene_key": "HandPlunge"
+        }
+      ]
+    },
+    "OutsideGrate": {
+      "text": "You have descended into a shallow, circular 20-foot depression, its floor consisting entirely of hard, bare dirt. Embedded firmly into the center of the dirt floor is a heavy, strong steel grate framed by unforgiving concrete. The dry streambed, which you followed from the north, leads directly into this pit, suggesting the drain below is the water's destination.",
+      "scene_summary": "Above the grate in a depression",
+      "choices": [
+        {
+          "text": "Leave the depression and follow the streambed back north",
+          "scene_key": "SlitInRock"
+        },
+        {
+          "text": "Try to open the grate",
+          "scene_key": "BeneathGrate"
+        }
+      ]
+    },
+    "BeneathGrate": {
+      "text": "With a metallic screech, you manage to lift the grate and swiftly descend a short ladder into a small, damp chamber. Looking up, you see the patch of sky framed by the 3x3 foot steel grate far above. From the floor of this narrow space, a low crawl begins, winding over slick, uneven cobbles and heading ominously inward to the west.",
+      "scene_summary": "Beneath the grate",
+      "choices": [
+        {
+          "text": "Start crawling over the cobblestones to the west",
+          "scene_key": "CobbleCrawl"
+        },
+        {
+          "text": "Go back up the ladder to the surface",
+          "scene_key": "OutsideGrate"
+        }
+      ]
+    },
+    "CobbleCrawl": {
+      "text": "You are forced to crawl over wet cobbles in this confining, low passage that stretches along an east/west axis. The air is heavy and close, but a small measure of dim, silvery light filters in from the east, providing the only break from the pervasive gloom that awaits you to the west.",
+      "scene_summary": "Crawling over cobbles",
+      "choices": [
+        {
+          "text": "Crawl west into the darkness",
+          "scene_key": "DebrisRoom"
+        },
+        {
+          "text": "Crawl east towards the light",
+          "scene_key": "BeneathGrate"
+        }
+      ]
+    },
+    "DebrisRoom": {
+      "text": "This dismal space is a true debris room, thoroughly choked with random stuff washed in from the surface by floodwaters. The low, wide passage with cobbles that you followed quickly becomes plugged with mud and debris here, rendering it impassable, but your eye catches an extremely narrow canyon that cuts sharply and steeply upward and west. Mysteriously, the cryptic letters 'XYZZY' are roughly carved on the wall near the debris pile.",
+      "scene_summary": "In a room of mud and debris",
+      "choices": [
+        {
+          "text": "Enter the crawlspace to the east",
+          "scene_key": "CobbleCrawl"
+        },
+        {
+          "text": "Enter the narrow canyon passage",
+          "scene_key": "SlopingCanyon"
+        },
+        {
+          "text": "Investigate the barrier of mud and debris",
+          "scene_key": "PluggedWall"
+        },
+        {
+          "text": "Pronounce the word 'XYZZY'",
+          "scene_key": "InsideBuilding"
+        }
+      ]
+    },
+    "SlopingCanyon": {
+      "text": "You are navigating an awkward, steeply sloping east/west canyon, where footing is difficult as the ground is smooth and treacherously slippery underfoot. Despite being deep underground, a remarkable golden light filters into the canyon from an unseen aperture somewhere above, creating dancing shadows and promising an exit to the world above.",
+      "scene_summary": "In the sloping canyon",
+      "choices": [
+        {
+          "text": "Carefully follow the passage to the west",
+          "scene_key": "OrangeStoneChamber1"
+        },
+        {
+          "text": "Follow the slope downwards to the east",
+          "scene_key": "DebrisRoom"
+        },
+        {
+          "text": "Try to climb the canyon walls to investigate the light",
+          "scene_key": "InvestigateCanyonLight"
+        }
+      ]
+    },
+    "OrangeStoneChamber1": {
+      "text": "You stand in a truly splendid chamber, the ceiling soaring thirty feet high into the gloom. The massive walls are breathtakingly beautiful, appearing as frozen rivers of vibrant orange stone, where flowstone formations seem to be eternally caught mid-cascade. The chamber offers two clear routes forward: a narrow canyon opens to the east, and a wide, good passage leads out from the west side.",
+      "scene_summary": "Standing in the orange stone chamber",
+      "choices": [
+        {
+          "text": "Enter the narrow canyon to the east",
+          "scene_key": "SlopingCanyon"
+        },
+        {
+          "text": "Take the wide passage to the west",
+          "scene_key": "TopOfPit"
+        },
+        {
+          "text": "Investigate the walls closer",
+          "scene_key": "OrangeRiverWalls"
+        }
+      ]
+    },
+    "TopOfPit": {
+      "text": "The floor drops away sharply at your feet to reveal a small pit, from which chilling traces of white mist rise and curl, as if the earth itself is breathing. The westward passage you followed terminates here, save for a tiny crack in the wall that continues deceptively onward. Directly into the mist-shrouded pit, rough-hewn stone steps lead downward, inviting descent into the unknown depths.",
+      "scene_summary": "Atop the pit of mists",
+      "choices": [
+        {
+          "text": "Go back through the large door to the east",
+          "scene_key": "OrangeStoneChamber1"
+        },
+        {
+          "text": "Take the stairs down into the pit",
+          "scene_key": "HallOfMists"
+        },
+        {
+          "text": "Peek through the crack into the continuing passage",
+          "scene_key": "CrackPeek"
+        }
+      ]
+    },
+    "HallOfMists": {
+      "text": "You stand at one end of a vast hall that stretches out of sight into the blackness to the west. The entire chamber is dominated by an eerie sight: it is filled with wisps of white mist that flow and sway to and fro with an unnerving smoothness, giving the illusion that they are almost alive. The chamber connects to a labyrinth of passages to the north and south, and the only way back up is via the stone stairway leading above.",
+      "scene_summary": "In the Hall of Mists",
+      "choices": [
+        {
+          "text": "Proceed up the stairs out of the pit",
+          "scene_key": "TopOfPit"
+        },
+        {
+          "text": "Walk down the hall to the west",
+          "scene_key": "EastBankOfFissure"
+        },
+        {
+          "text": "Take the passage to the south",
+          "scene_key": "NuggetRoom"
+        },
+        {
+          "text": "Take the passage to the north",
+          "scene_key": "HallOfTheMountainKing"
+        }
+      ]
+    },
+    "NuggetRoom": {
+      "text": "This is a low, close-ceilinged room entirely dominated by a priceless sight: a large, glistening nugget of gold resting prominently upon a low, stone pedestal in the center. The silence is broken only by the sense of deep melancholy from a crude note scrawled on the wall beside it, which states with stark simplicity: 'so tired'.",
+      "scene_summary": "A room with a large gold nugget",
+      "choices": [
+        {
+          "text": "Leave the room back to the north",
+          "scene_key": "HallOfMists"
+        },
+        {
+          "text": "Touch the huge gold nuggest on the pedestal",
+          "scene_key": "NuggetTouch"
+        }
+      ]
+    },
+    "EastBankOfFissure": {
+      "text": "You find yourself suddenly standing on the east bank of a deep fissure that brutally slices clear across the hall, its depths hidden by shadow. The mist that permeates the hall is particularly thick here, swirling nervously over the precipice. A desperate, hopeful arrow is crudely scratched into the stone surface, pointing straight off the edge, with the single, profound word 'trust' written alongside it.",
+      "scene_summary": "East bank of Hall of Mists fissure",
+      "choices": [
+        {
+          "text": "Head back to the east into the hall",
+          "scene_key": "HallOfMists"
+        },
+        {
+          "text": "Trusting, step out into the air where the arrow indicates",
+          "scene_key": "CrystalBridge"
+        },
+        {
+          "text": "You don't trust strange arrows, and look for another way across",
+          "scene_key": "FissureBypass"
+        }
+      ]
+    },
+    "CrystalBridge": {
+      "text": "As you take the terrifying step out into the air, the darkness of the fissure is instantly annihilated by a brilliant cascade of crystalline sparks, bursting forth in all the colors of the rainbow. With dizzying speed, a shimmering crystal bridge snaps into existence, solidifying the air and forming a perfect, temporary span across the chasm.",
+      "scene_summary": "The crystal bridge",
+      "choices": [
+        {
+          "text": "Cross the bridge over the fissure to the west",
+          "scene_key": "WestBankOfFissure"
+        },
+        {
+          "text": "Step off the bridge to return to the eastern edge",
+          "scene_key": "EastBankOfFissure"
+        }
+      ]
+    },
+    "WestBankOfFissure": {
+      "text": "You are now safely on the west side of the fissure, standing within a continuation of the great Hall of Mists. Behind you, the magical crystalline bridge stretches back across the chasm to the east, its existence still faintly humming in the air. The vast hall, still shrouded in creeping mist, seems to confidently continue onward to the west, promising more mysteries to uncover.",
+      "scene_summary": "West bank of the Hall of Mists fissure",
+      "choices": [
+        {
+          "text": "Proceed west, further into the hall",
+          "scene_key": "HallOfMistsWest"
+        },
+        {
+          "text": "Cross the crystalline bridge to the eastern edge",
+          "scene_key": "EastBankOfFissure"
+        }
+      ]
+    },
+    "HallOfMistsWest": {
+      "text": "You have arrived at the west end of the Hall of Mists, where the wide, misty space abruptly narrows into more difficult passages. A low, wide crawl passage begins to the north, suitable only for movement on hands and knees. To the south, a small, unusual passage begins six feet off the floor, which seems to immediately twist sharply upon entering, hinting at a confusing route beyond.",
+      "scene_summary": "The west end of the Hall of Mists",
+      "choices": [
+        {
+          "text": "Head east back towards the fissure",
+          "scene_key": "WestBankOfFissure"
+        },
+        {
+          "text": "Enter the low crawl to the north",
+          "scene_key": "LongCurvingPassage"
+        },
+        {
+          "text": "Mantle yourself up into the twisting passage to the south",
+          "scene_key": "TwistyMaze1"
+        }
+      ]
+    },
+    "TwistyMaze1": {
+      "text": "The passage walls press in close on all sides, forcing you to move carefully through a maze of twisty little passages, all alike. Every corner you turn reveals an identical rough-hewn passage, making it impossible to gain your bearings in the confusing darkness.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Back out",
+          "scene_key": "HallOfMistsWest"
+        },
+        {
+          "text": "Veer north",
+          "scene_key": "TwistyMaze2"
+        },
+        {
+          "text": "Veer south",
+          "scene_key": "TwistyMaze3"
+        }
+      ]
+    },
+    "TwistyMaze2": {
+      "text": "You are deep inside the claustrophobic stone structure, caught in a maze of twisty little passages, all alike. Each identical turn and intersection offers no clue as to your direction or how to escape the stone labyrinth.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Veer north",
+          "scene_key": "TwistyMaze4"
+        },
+        {
+          "text": "Veer east",
+          "scene_key": "TwistyMaze1"
+        },
+        {
+          "text": "Veer west",
+          "scene_key": "TwistyMaze5"
+        }
+      ]
+    },
+    "TwistyMaze3": {
+      "text": "The stone walls press in, creating the disorienting feeling of moving in a circle as you navigate a maze of twisty little passages, all alike. The passages are small, confining, and devoid of any unique landmarks.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Veer north",
+          "scene_key": "TwistyMaze5"
+        },
+        {
+          "text": "Veer east",
+          "scene_key": "TwistyMaze6"
+        },
+        {
+          "text": "Veer west",
+          "scene_key": "TwistyMaze1"
+        }
+      ]
+    },
+    "TwistyMaze4": {
+      "text": "You are utterly lost in the dense, subterranean network of a maze of twisty little passages, all alike. The small, rough tunnels look indistinguishable from one another, making every decision a gamble.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Veer south",
+          "scene_key": "TwistyMaze6"
+        },
+        {
+          "text": "Veer east",
+          "scene_key": "BrinkOfPit"
+        },
+        {
+          "text": "Veer west",
+          "scene_key": "TwistyMaze2"
+        }
+      ]
+    },
+    "TwistyMaze5": {
+      "text": "The oppressive feeling of confusion deepens as you continue through a maze of twisty little passages, all alike. The air is stale, and the identical stone walls offer no help in mapping your surroundings.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Veer south",
+          "scene_key": "TwistyMaze2"
+        },
+        {
+          "text": "Veer west",
+          "scene_key": "TwistyMaze3"
+        }
+      ]
+    },
+    "TwistyMaze6": {
+      "text": "Each small intersection is a replica of the last as you try to navigate a maze of twisty little passages, all alike. The labyrinthine network makes it easy to lose all sense of direction and distance.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Veer north",
+          "scene_key": "TwistyMaze7"
+        },
+        {
+          "text": "Veer east",
+          "scene_key": "TwistyMaze3"
+        },
+        {
+          "text": "Veer west",
+          "scene_key": "TwistyMaze4"
+        }
+      ]
+    },
+    "TwistyMaze7": {
+      "text": "The passages continue to twist and turn, an endless chain of disorientation in a maze of twisty little passages, all alike. You briefly wonder if you have simply been moving in circles since you began.",
+      "scene_summary": "Lost in a maze",
+      "choices": [
+        {
+          "text": "Veer north",
+          "scene_key": "PirateLair"
+        },
+        {
+          "text": "Veer south",
+          "scene_key": "TwistyMaze6"
+        },
+        {
+          "text": "Veer west",
+          "scene_key": "BrinkOfPit"
+        }
+      ]
+    },
+    "PirateLair": {
+      "text": "You stumble into what feels like a secret refuge, which seems to be a pirate's lair nestled impossibly deep inside the maze. In one corner, a large treasure chest sits ajar, its lid propped open just enough to hint at the riches within. The only way out of this unexpected hoard room is back the way you came, through the twisting passages.",
+      "scene_summary": "In the pirate lair",
+      "choices": [
+        {
+          "text": "Investigate the treasure chest propped open in the room corner",
+          "scene_key": "PirateTreasure"
+        },
+        {
+          "text": "Exit the room",
+          "scene_key": "TwistyMaze7"
+        }
+      ]
+    },
+    "BrinkOfPit": {
+      "text": "The twisting passage abruptly deposits you at the brink of a deep, thirty-foot pit, its far side barely visible in the gloom. An enormous, smooth, orange column of stone descends directly down one wall, providing a clear, though likely irreversible, path below. Though you could easily climb down here, it is clear you could not get back up unassisted, and the confusing maze continues at this level.",
+      "scene_summary": "At the edge of a pit with an orange column",
+      "choices": [
+        {
+          "text": "Continue in the maze, veering east",
+          "scene_key": "TwistyMaze7"
+        },
+        {
+          "text": "Continue in the maze, veering west",
+          "scene_key": "TwistyMaze4"
+        },
+        {
+          "text": "Slide down the orange column into the room below",
+          "scene_key": "OrangeStoneChamber1"
+        }
+      ]
+    },
+    "HallOfTheMountainKing": {
+      "text": "You are standing in what must be the fabled Hall of the Mountain King, an immense chamber immediately recognizable by the massive carved relief of a king upon his throne that dominates one wall. Stone passages head off in multiple directions from this majestic center point. A curious, faint hissing noise drifts in from behind a rock to the north, disrupting the royal stillness.",
+      "scene_summary": "The Hall of the Mountain King",
+      "choices": [
+        {
+          "text": "Head to the south, where you can see mists through the door",
+          "scene_key": "HallOfMists"
+        },
+        {
+          "text": "Proceed to the north, into a low hallway",
+          "scene_key": "LowNSPassage"
+        },
+        {
+          "text": "Leave through the west exit",
+          "scene_key": "WestSideChamber"
+        },
+        {
+          "text": "Leave through the east exit",
+          "scene_key": "EastSideChamber"
+        },
+        {
+          "text": "Investigate the hissing noise in the chamber",
+          "scene_key": "SnakeTime"
+        }
+      ]
+    },
+    "WestSideChamber": {
+      "text": "You are in a small side chamber that feels deeply unsettling, entirely due to the strange and wild paintings that violently adorn the walls, their chaotic energy leaving you with an odd, queasy feeling in your stomach. A clearly marked passage continues to the west and upwards, offering an immediate escape from the disturbing art.",
+      "scene_summary": "The west side chamber",
+      "choices": [
+        {
+          "text": "Move past the paintings, continuing to the west",
+          "scene_key": "LongCurvingPassage"
+        },
+        {
+          "text": "Retreat from the paintings back to the hall",
+          "scene_key": "HallOfTheMountainKing"
+        },
+        {
+          "text": "Touch one of the unsettling paintings",
+          "scene_key": "TouchWestPaintings"
+        }
+      ]
+    },
+    "EastSideChamber": {
+      "text": "Stepping into this small side chamber offers an unexpected contrast, dominated by a small, but striking collection of several bizarre plants growing in unusual pots. The air here is subtly different, carrying a faint, earthy fragrance from the strange subterranean horticulture.",
+      "scene_summary": "The east side chamber",
+      "choices": [
+        {
+          "text": "Return to the west back to the hall",
+          "scene_key": "HallOfTheMountainKing"
+        },
+        {
+          "text": "Investigate the plants closer",
+          "scene_key": "StrangePlantInvestigation"
+        }
+      ]
+    },
+    "LongCurvingPassage": {
+      "text": "You are following a long, winding passageway carved from the rough stone, which curves gracefully from the east around to point sharply to the south. The tunnel feels ancient and worn, with every turn leading you deeper into the subterranean network.",
+      "scene_summary": "A long curving passage",
+      "choices": [
+        {
+          "text": "Proceed to the east",
+          "scene_key": "WestSideChamber"
+        },
+        {
+          "text": "Follow the passage around to the south",
+          "scene_key": "HallOfMistsWest"
+        }
+      ]
+    },
+    "LowNSPassage": {
+      "text": "You are forced to crouch down in this low passage that cuts a straight line from the north to the south. Directly in the center of the passage sits a small, open trapdoor, its iron frame surrounding a sheer drop with a ladder leading downwards into the darkness below.",
+      "scene_summary": "Low passage with trapdoor",
+      "choices": [
+        {
+          "text": "Follow the passage north",
+          "scene_key": "Y2"
+        },
+        {
+          "text": "Head south",
+          "scene_key": "HallOfTheMountainKing"
+        },
+        {
+          "text": "Take the ladder down",
+          "scene_key": "EWPassage"
+        }
+      ]
+    },
+    "Y2": {
+      "text": "You emerge into a large, echo-filled room where three routes are visible: a passage continues to the south and a second one disappears to the west, while the third exit is blocked by a wall of broken rock to the east. In the very center of the floor, a prominent rock has the stark inscription 'Y2' painted upon it, and the moment you enter, a disembodied, hollow voice booms softly and says the single, arcane word: 'PLUGH'.",
+      "scene_summary": "You are at Y2",
+      "choices": [
+        {
+          "text": "Exit rapidly to the south",
+          "scene_key": "LowNSPassage"
+        },
+        {
+          "text": "Investigate the broken rock. Weird voices don't bother you.",
+          "scene_key": "BrokenRock"
+        },
+        {
+          "text": "Proceed quickly to the west",
+          "scene_key": "WindowOnPit"
+        },
+        {
+          "text": "Repeat it back. 'PLUGH?'",
+          "scene_key": "PLUGHTransfer"
+        }
+      ]
+    },
+    "PLUGHTransfer": {
+      "text": "The moment you say the word, a powerful magical energy surges through the air; you feel your vision blur and your stomach gives a violent lurch. A dizzying rushing sensation overwhelms you, lasting only moments before you black out completely.",
+      "scene_summary": "Magical Transfer",
+      "choices": [
+        {
+          "text": "Open your eyes",
+          "scene_key": "InsideBuilding"
+        }
+      ]
+    },
+    "WindowOnPit": {
+      "text": "You are standing at a low window that offers a terrifying view into a huge pit, its walls disappearing up out of sight into the blackness. The floor of the pit is dimly visible over 50 feet below, partially obscured by traces of white mist that are noticeably thicker to the left. Disturbing marks in the dust around the window indicate that someone has been here recently. Most strikingly, directly across the pit and 25 feet away, a similar window is cut into the opposite wall, and you distinctly see a shadowy figure standing in the opening.",
+      "scene_summary": "Linked window rooms across the pit",
+      "choices": [
+        {
+          "text": "Leave the room",
+          "scene_key": "Y2"
+        },
+        {
+          "text": "Wave to the mysterious figure across the gap",
+          "scene_key": "FigureWavesBack"
+        }
+      ]
+    },
+    "EWPassage": {
+      "text": "You are in a narrow passage that runs east-west, lit intermittently by a fascinating feature: small green lights blink on and off rhythmically along the walls. The small ladder in the middle leads directly up to a trapdoor in the ceiling, providing a way back to the low passage above.",
+      "scene_summary": "E/W Passage with green lights",
+      "choices": [
+        {
+          "text": "Head up the ladder",
+          "scene_key": "LowNSPassage"
+        },
+        {
+          "text": "Wander west",
+          "scene_key": "TwopitRoomEast"
+        },
+        {
+          "text": "Follow the lights east",
+          "scene_key": "GreenChamber"
+        }
+      ]
+    },
+    "GreenChamber": {
+      "text": "This is a small chamber bathed in a powerful, eerie green light that gives the stone an unnatural glow. The source of this illumination seems to emanate from a narrow crack to the north, a half-hidden fissure through which the strange light pulses and bleeds into the chamber.",
+      "scene_summary": "An eerie-lit green chamber",
+      "choices": [
+        {
+          "text": "Back out of the room",
+          "scene_key": "EWPassage"
+        },
+        {
+          "text": "Squeeze through the crack",
+          "scene_key": "EmeraldRoom"
+        }
+      ]
+    },
+    "EmeraldRoom": {
+      "text": "You have entered a small chamber of stunning beauty, its walls completely studded with countless glowing green gemstones that cast a dazzling light everywhere. A barely perceptible, faint humming sound emanates through the air, vibrating softly off the crystal surfaces. In the center of the room sits a massive, unsettlingly smooth black egg-shaped object, completely dominating the space.",
+      "scene_summary": "The emerald chamber",
+      "choices": [
+        {
+          "text": "Leave through the crack",
+          "scene_key": "GreenChamber"
+        },
+        {
+          "text": "Pause a moment to admire the green gemstone walls",
+          "scene_key": "PrettyGreenWalls"
+        },
+        {
+          "text": "Investigate the dark egg-shaped object in the center of the room",
+          "scene_key": "SinisterEgg"
+        }
+      ]
+    },
+    "TwopitRoomEast": {
+      "text": "You are at the east end of a vast room where two frightening pits are clearly visible in the floor. The floor here is littered with thin rock slabs, which surprisingly make it easy to descend the pits if you wish. Thankfully, there is a clear path here bypassing the pits that successfully connects the passages from east and west. Although there are holes all over the ceiling and walls, the only big one is in the roof directly over the west pit, a hole that is far out of reach.",
+      "scene_summary": "East end of the two pit room",
+      "choices": [
+        {
+          "text": "Travel east, into the low passage",
+          "scene_key": "EWPassage"
+        },
+        {
+          "text": "Head to the west, past the first pit",
+          "scene_key": "TwopitRoomWest"
+        },
+        {
+          "text": "Descend into the nearest pit",
+          "scene_key": "EastPit"
+        }
+      ]
+    },
+    "TwopitRoomWest": {
+      "text": "You are standing at the west end of the enormous room where the two pits are clearly visible. The ceiling at this end is notable for the large hole situated directly above the pit, an opening that leads into the blackness of the ceiling. The rock slabs around the edge make entry into the western pit simple.",
+      "scene_summary": "West end of the two pit room",
+      "choices": [
+        {
+          "text": "Cross the room toward the east, past the pit",
+          "scene_key": "TwopitRoomEast"
+        },
+        {
+          "text": "Exit the room to the west",
+          "scene_key": "MirrorRoom"
+        },
+        {
+          "text": "Descend into the nearest pit",
+          "scene_key": "WestPit"
+        }
+      ]
+    },
+    "EastPit": {
+      "text": "You are at the bottom of the eastern pit, a confined space of damp earth and rough stone. Beyond some scattered dirt and rocks, there doesn't seem to be anything else here of note or interest, making the chamber feel like a dead end.",
+      "scene_summary": "East pit",
+      "choices": [
+        {
+          "text": "Climb out of the pit",
+          "scene_key": "TwopitRoomEast"
+        },
+        {
+          "text": "Wait a bit. Maybe something will happen.",
+          "scene_key": "WaitingTime"
+        }
+      ]
+    },
+    "WestPit": {
+      "text": "You are now at the bottom of the western pit, a deeper chamber where the light is dim. Looking straight up, you can clearly see the large hole in the ceiling, but there is no obvious way to get to it. Near your feet, a tiny, determined small plant is sprouting out of the dirt, a fragile sign of life in the deep underground.",
+      "scene_summary": "West pit",
+      "choices": [
+        {
+          "text": "Climb out of the pit",
+          "scene_key": "TwopitRoomWest"
+        },
+        {
+          "text": "Water the plant. Somehow.",
+          "scene_key": "Beanstalk"
+        }
+      ]
+    },
+    "Beanstalk": {
+      "text": "The moment you water the small plant, it erupts into a surge of energetic growth, a thick stalk rapidly filling the entire pit and aggressively pushing you upward toward the hole in the ceiling. You scramble desperately for your life, reaching out to catch hold of the rock of the ledge as the plant's massive leaves brush past you.",
+      "scene_summary": "A rapidly growing beanstalk",
+      "choices": [
+        {
+          "text": "Grab the ledge!",
+          "scene_key": "GiantRoom"
+        }
+      ]
+    },
+    "GiantRoom": {
+      "text": "You scramble over the edge into a truly immense room, a space of staggering scale where the ceiling is far too high for your lamp to illuminate. A cavernous passage leads off into the darkness to the north. Directly in the floor, a large hole marks your entrance, and looking down, you can see the two pit room far below, but the now-wilting plant leaves no clear way down to that level.",
+      "scene_summary": "A gigantic room",
+      "choices": [
+        {
+          "text": "Head north",
+          "scene_key": "Whirlpool"
+        }
+      ]
+    },
+    "Whirlpool": {
+      "text": "You have entered a magnificent cavern, the air filled with the deafening sound of a rushing stream that dramatically cascades over a sparkling waterfall. Below the fall, the water instantly plunges into a roaring whirlpool that disappears through a massive hole in the floor. A single, quieter passage exits to the south, away from the churning water.",
+      "scene_summary": "Room with huge whirlpool",
+      "choices": [
+        {
+          "text": "Attempt to climb to top of waterfall",
+          "scene_key": "WaterfallClimb"
+        },
+        {
+          "text": "Take a deep breath, and dive into the whirlpool",
+          "scene_key": "ThroughWhirlpool"
+        },
+        {
+          "text": "Return to the south",
+          "scene_key": "GiantRoom"
+        }
+      ]
+    },
+    "ThroughWhirlpool": {
+      "text": "You are swiftly dragged down, down, into the murky depths of the whirlpool, the water rushing past your ears. Just as your lungs feel ready to fail and you can no longer hold your breath, you are launched out over a short waterfall and plunge into the shallow end of a large reservoir. Gasping and sputtering, you break the surface of the cold water, unharmed but soaked.",
+      "scene_summary": "Traveling through the whirlpool",
+      "choices": [
+        {
+          "text": "Crawl weakly towards the shore",
+          "scene_key": "UndergroundLake"
+        },
+        {
+          "text": "Dive down again to investigate a fleck of gold you saw",
+          "scene_key": "GoldPool"
+        }
+      ]
+    },
+    "UndergroundLake": {
+      "text": "You stand at the edge of a large underground reservoir, the entire space dominated by an opaque cloud of white mist that completely fills the room and rises rapidly upward to the unseen ceiling. The vast lake is fed by a stream, which tumbles out of a hole in the wall approximately ten feet overhead and splashes noisily into the water somewhere hidden within the mist. The only visible exit seems to be a passage leading to the south.",
+      "scene_summary": "At the edge of a subterranean lake",
+      "choices": [
+        {
+          "text": "Take the passage to the south",
+          "scene_key": "MirrorRoom"
+        },
+        {
+          "text": "Try your luck fishing in the lake",
+          "scene_key": "GoFish"
+        },
+        {
+          "text": "Pause a while to watch the mist",
+          "scene_key": "MistWatcher"
+        }
+      ]
+    },
+    "MirrorRoom": {
+      "text": "You are in a stunning, circular chamber roughly 25 feet across, its floor perpetually covered by a layer of white mist seeping in from the northern passage. The smooth stone walls extend upward for well over 100 feet, creating a massive, echoing shaft. Suspended from an unseen point far above, an enormous two-sided mirror is hanging perfectly parallel to the walls, dividing the canyon space. A small window can be faintly seen set into the wall, roughly fifty feet up. This canyon has exits to the north and east.",
+      "scene_summary": "At the bottom of the mirror room",
+      "choices": [
+        {
+          "text": "Leave to the north",
+          "scene_key": "UndergroundLake"
+        },
+        {
+          "text": "Take the eastern exit",
+          "scene_key": "TwopitRoomWest"
+        },
+        {
+          "text": "Try to throw something at the mirror",
+          "scene_key": "MirrorBreaker"
+        }
+      ]
+    }
+  }
+}

@@ -319,7 +319,7 @@ class GWindow(object):
             except:
                 pass
             tkinter._root.destroy()
-            del tkinter._root
+            # del tkinter._root
         except:
             pass
 
