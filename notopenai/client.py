@@ -53,7 +53,7 @@ class NotOpenAI:
                     "messages": messages,
                     "response_format":response_format,
                     "api_key": NotOpenAI.api_key,
-                    "course_id":"fall25"
+                    "course_id":"spring26"
                 }
 
                 # Convert the data payload to a JSON-formatted string

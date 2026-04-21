@@ -1,6 +1,6 @@
 """
 A warmup exercise (Milestone 0) to ensure that the needed story data can be brought
-into the program and navigated.
+into the program and navigated. DON'T FORGET TO UPLOAD THIS!
 """
 
 import json
